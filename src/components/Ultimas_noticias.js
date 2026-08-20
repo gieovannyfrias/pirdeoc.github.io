@@ -1,12 +1,13 @@
-// 1. Base de datos local
+// 1. Base de datos local (Cada ID tiene su sección real)
 const noticiasDatos = [
     {
         id: 1,
         hora: "18:31",
-        seccion: "En Vivo",
+        seccion: "Tecnología",
         imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
         titular: "El Congreso aprueba la reforma fiscal tras una sesión extraordinaria de doce horas",
-        cuerpo: "Con 260 votos a favor, el paquete económico introduce nuevos gravámenes a corporaciones tecnológicas."
+        cuerpo: "Con 260 votos a favor, el paquete económico introduce nuevos gravámenes a corporaciones tecnológicas.",
+        enlace: "/No_disponible"
     },
     {
         id: 2,
@@ -14,7 +15,8 @@ const noticiasDatos = [
         seccion: "Mercados",
         imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
         titular: "Las bolsas asiáticas registran pérdidas generalizadas ante el temor de una desaceleración",
-        cuerpo: "El índice Nikkei cae un 2.3%, arrastrado principalmente por el sector de semiconductores y manufactura."
+        cuerpo: "El índice Nikkei cae un 2.3%, arrastrado principalmente por el sector de semiconductores y manufactura.",
+        enlace: "/No_disponible"
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ const noticiasDatos = [
         seccion: "Internacional",
         imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
         titular: "Cumbre del Clima cierra con un acuerdo histórico para reducir subsidios a combustibles fósiles",
-        cuerpo: "Más de 140 delegaciones nacionales firman el documento de compromiso vinculante con metas fijadas para 2030."
+        cuerpo: "Más de 140 delegaciones nacionales firman el documento de compromiso vinculante con metas fijadas para 2030.",
+        enlace: "/No_disponible"
     },
     {
         id: 4,
@@ -30,11 +33,12 @@ const noticiasDatos = [
         seccion: "Cultura",
         imagen: "https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000",
         titular: "Fallece la novelista Elena Varela a los 84 años en su residencia de Madrid",
-        cuerpo: "La ganadora del Premio Cervantes deja un legado indispensable para la narrativa contemporánea en español."
+        cuerpo: "La ganadora del Premio Cervantes deja un legado indispensable para la narrativa contemporánea en español.",
+        enlace: "/No_disponible"
     }
 ];
 
-// 2. Inyección dinámica de CSS (Evita archivos CSS separados o variables rotas)
+// 2. Inyección dinámica de CSS
 function inyectarEstilosModulo() {
     if (document.getElementById("estilos-modulo-noticias")) return;
 
@@ -83,6 +87,8 @@ function inyectarEstilosModulo() {
         .noticias-scroll-container::-webkit-scrollbar-thumb:hover { background: #db2d2d; }
         
         .noticia-bloque {
+            display: block;
+            text-decoration: none;
             border-bottom: 1px solid #f0f0f5;
             padding: 14px 0;
             transition: background-color 0.2s ease;
@@ -97,13 +103,35 @@ function inyectarEstilosModulo() {
         }
         .noticia-bloque:last-child { border-bottom: none; }
         .noticia-bloque:hover { background-color: #fcfcfd; }
+        .noticia-bloque:hover h4 { color: #db2d2d; }
         
-        .noticia-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 11px; font-weight: 700; }
-        .hora-alerta { color: #db2d2d; }
+        /* Contenedor meta en vertical */
+        .noticia-meta { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 4px; 
+            margin-bottom: 8px; 
+            font-size: 11px; 
+            font-weight: 700; 
+        }
+        
+        /* Fila de la hora arriba */
+        .hora-alerta { 
+            color: #db2d2d; 
+            display: block;
+        }
+        
+        /* Fila inferior con alineación horizontal al lado */
+        .noticia-submeta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
         .etiqueta-seccion { color: #666666; text-transform: uppercase; letter-spacing: 0.3px; }
-        .etiqueta-vivo { background-color: #db2d2d; color: #ffffff; padding: 1px 5px; font-size: 9px; text-transform: uppercase; border-radius: 2px; }
+        .etiqueta-vivo { background-color: #db2d2d; color: #ffffff; padding: 1px 5px; font-size: 9px; text-transform: uppercase; border-radius: 2px; display: inline-block; }
         
-        .noticia-bloque h4 { font-size: 16px; line-height: 1.35; font-weight: 700; margin: 0 0 6px 0; color: #111111; }
+        .noticia-bloque h4 { font-size: 16px; line-height: 1.35; font-weight: 700; margin: 0 0 6px 0; color: #111111; transition: color 0.2s ease; }
         .noticia-bloque p { font-size: 13px; line-height: 1.45; margin: 0; color: #444446; }
         
         @keyframes latidoPeriodistico {
@@ -132,10 +160,8 @@ function inicializarModuloNoticias(idContenedor) {
     const contenedorRaiz = document.getElementById(idContenedor);
     if (!contenedorRaiz) return;
 
-    // Ejecuta la inyección de estilos
     inyectarEstilosModulo();
 
-    // Monta la estructura HTML limpia
     contenedorRaiz.innerHTML = `
         <div class="columna-noticias-urgentes">
             <div class="noticias-header">
@@ -151,24 +177,25 @@ function inicializarModuloNoticias(idContenedor) {
 }
 
 function crearNodoNoticia(item) {
-    const esVivo = item.seccion.toLowerCase() === "en vivo";
-    const article = document.createElement("article");
-    article.className = "noticia-bloque";
+    const enlaceContenedor = document.createElement("a");
+    enlaceContenedor.className = "noticia-bloque";
+    enlaceContenedor.href = item.enlace;
+    enlaceContenedor.target = "_blank";
+    enlaceContenedor.rel = "noopener noreferrer";
 
-    const badge = esVivo 
-        ? `<span class="etiqueta-vivo">En Vivo</span>` 
-        : `<span class="etiqueta-seccion">${item.seccion}</span>`;
-
-    article.innerHTML = `
+    enlaceContenedor.innerHTML = `
         <div class="noticia-meta">
-            <span class="hora-alerta">${item.hora}</span>
-            ${badge}
+            <div class="hora-alerta">${item.hora}</div>
+            <div class="noticia-submeta">
+                <span class="etiqueta-seccion">${item.seccion}</span>
+                <span class="etiqueta-vivo">En Vivo</span>
+            </div>
         </div>
         <img src="${item.imagen}" alt="Noticia" class="img_0" loading="lazy">
         <h4>${item.titular}</h4>
         <p>${item.cuerpo}</p>
     `;
-    return article;
+    return enlaceContenedor;
 }
 
 function renderizarLista(lista) {
@@ -178,7 +205,7 @@ function renderizarLista(lista) {
     });
 }
 
-// 4. API Pública del script para añadir alertas en tiempo real
+// 4. API Pública del script
 function insertarNoticiaUrgente(noticia) {
     if (!contenedorScroll) return;
     const nuevoElemento = crearNodoNoticia(noticia);
@@ -190,6 +217,5 @@ function insertarNoticiaUrgente(noticia) {
 
 // 5. Arranque automático
 document.addEventListener("DOMContentLoaded", () => {
-    // Reemplaza "modulo-noticias" por el ID de tu contenedor en el HTML
     inicializarModuloNoticias("modulo-noticias");
 });
