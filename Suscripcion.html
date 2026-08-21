@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Suscribirse</title>
+    <meta name="description" content="Registrarte en nuestra newsletter exclusiva y recibir novedades antes que nadie.">
+<meta name="keywords" content="periodico,noticias"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Suscribirse">
+    <meta property="og:title" content="Suscribirse">
+    <meta property="og:description" content="Registrarte en nuestra newsletter exclusiva y recibir novedades antes que nadie.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Suscripcion">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Suscribirse">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Suscribirse">
+    <meta name="twitter:title" content="Suscribirse">
+    <meta name="twitter:description" content="Registrarte en nuestra newsletter exclusiva y recibir novedades antes que nadie.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+    <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Suscribirse",
+  "url": "https://pirdeoc.gieovannyfrias.com/404",
+  "description": "Registrarte en nuestra newsletter exclusiva y recibir novedades antes que nadie.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+<div class="section">
+    <div class="subscribe-container">
+        <h1>¡Mantente informado!</h1>
+        <p>Introduce tus datos a continuación para registrarte en nuestra newsletter exclusiva y recibir novedades antes que nadie.</p>
+
+        <form id="pageSubscribeForm" class="subscribe-form">
+            <!-- Campo de Nombre (Opcional pero útil en páginas dedicadas) -->
+            <div class="input-group">
+                <label for="userName">Nombre completo</label>
+                <input type="text" id="userName" placeholder="Tu nombre" required>
+            </div>
+
+            <!-- Campo de Email -->
+            <div class="input-group">
+                <label for="userEmail">Correo electrónico</label>
+                <input type="email" id="userEmail" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Completar Registro</button>
+        </form>
+
+        <!-- Mensajes de éxito o error -->
+        <div id="statusMessage" class="response-message"></div>
+
+        <!-- Enlace para regresar a la web principal -->
+        <a href="/index" class="back-link">&larr; Volver al inicio</a>
+    </div>
+  </div>
+    <style>
+       :root {
+            --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+        }
+        /* --- ESTILOS GENERALES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            padding: 0;
+          zoom:75%;
+        }
+      .section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+      }
+        /* --- TARJETA DE SUSCRIPCIÓN --- */
+        .subscribe-container {
+/*            background: #ffffff;*/
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .subscribe-container h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .subscribe-container p {
+            color: #7f8c8d;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* --- FORMULARIO --- */
+        .subscribe-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .input-group {
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            color: #34495e;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #3498db;
+        }
+
+        /* --- BOTÓN DE ENVÍO --- */
+        .submit-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* --- ENLACE DE RETORNO --- */
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #7f8c8d;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #34495e;
+            text-decoration: underline;
+        }
+
+        /* --- ESTADOS DE RESPUESTA --- */
+        .response-message {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            display: none;
+        }
+
+        .response-message.success {
+            display: block;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #c8e6c9;
+        }
+
+        .response-message.error {
+            display: block;
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ffcdd2;
+        }
+    </style>
+      <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+    <!-- --- LÓGICA DE INTERACCIÓN --- -->
+    <script>
+        document.getElementById('pageSubscribeForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se refresque
+
+            const nameInput = document.getElementById('userName');
+            const emailInput = document.getElementById('userEmail');
+            const statusMessage = document.getElementById('statusMessage');
+
+            // Simulación de envío exitoso
+            statusMessage.textContent = `¡Gracias ${nameInput.value.trim()}! Te has suscrito correctamente con el correo ${emailInput.value.trim()}.`;
+            statusMessage.className = "response-message success";
+
+            // Limpia los campos del formulario
+            nameInput.value = "";
+            emailInput.value = "";
+        });
+    </script>
+
+</body>
+</html>
