@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
     <title>Pirdeoc - Periodico digital Global</title>
     <meta name="description" content="Es un periodico digital publicado en México la ciudad de México y cuyo editor es GF que se distribuye en México y otros países.">
-    <!-- Fuentes tipográficas de alta gama editorial -->
-    <link href="https://googleapis.com" rel="stylesheet">
 <!--  logo fuente-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <!-- METADATOS PREMIUM (OPEN GRAPH) PARA REDES SOCIALES Y WHATSAPP -->
-    <meta property="og:type" content="article">
+      <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+      <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="WebSite">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Pirdeoc - Periodico digital Global">
     <meta property="og:title" content="Pirdeoc - Periodico digital Global">
     <meta property="og:description" content="Es un periodico digital publicado en México la ciudad de México y cuyo editor es GF que se distribuye en México y otros países.">
-    <meta property="og:url" content="https://periodic.gieovannyfrias.com">
-    <!-- Enlace directo a la imagen de vista previa (debe ser una URL absoluta) -->
-    <meta property="og:image" content="https://periodic.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Periodico digital Global">
 
-    <!-- METADATOS EXCLUSIVOS PARA TWITTER / X -->
+    <!-- Tarjetas Exclusivas para Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Pirdeoc">
     <meta name="twitter:title" content="Pirdeoc - Periodico digital Global">
     <meta name="twitter:description" content="Es un periodico digital publicado en México la ciudad de México y cuyo editor es GF que se distribuye en México y otros países.">
-    <meta name="twitter:image" content="https://periodic.gieovannyfrias.com/Imagenes/Logo.webp">
-
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+  <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pirdeoc - Periodico digital Global",
+  "url": "https://pirdeoc.gieovannyfrias.com",
+  "description": "Es un periodico digital publicado en México la ciudad de México y cuyo editor es GF que se distribuye en México y otros países.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+  
 </head>
 <body>
 
@@ -812,7 +874,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnCompartir.addEventListener('click', () => {
         // El script jala automáticamente los textos y la imagen configurados en el HTML [1]
-        const enlaceArticulo = "https://elcronicaglobal.com";
+        const enlaceArticulo = "https://pirdeoc.gieovannyfrias.com";
         const tituloArticulo = document.title;
         const descripcionBreve = document.querySelector('meta[name="description"]')?.content || '';
 
