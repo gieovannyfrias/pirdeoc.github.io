@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Hemeroteca</title>
+    <meta name="description" content="Archivo General de la Hemeroteca de periodico digital.">
+<meta name="keywords" content="periodico digital,noticias,nacionl,internacional"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="WebPage">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Hemeroteca">
+    <meta property="og:title" content="Hemeroteca">
+    <meta property="og:description" content="Archivo General de la Hemeroteca de periodico digital.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Hemeroteca">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hemeroteca">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Hemeroteca">
+    <meta name="twitter:title" content="Hemeroteca">
+    <meta name="twitter:description" content="Archivo General de la Hemeroteca de periodico digital.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+    <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hemeroteca",
+  "url": "https://pirdeoc.gieovannyfrias.com/Hemeroteca",
+  "description": "Archivo General de la Hemeroteca de periodico digital.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+
+    <div class="contenedor-hemeroteca">
+        <header>
+            <h1>Archivo General de la Hemeroteca</h1>
+            <div class="sub-header">
+                <span>SECCIÓN: REGISTROS HISTÓRICOS</span>
+                <span>ACCESO PÚBLICO</span>
+                <span id="fecha-actual">EDICIÓN DIGITAL</span>
+            </div>
+        </header>
+
+        <!-- BUSCADOR Y FILTROS -->
+        <section class="panel-busqueda">
+            <div class="control-filtro">
+                <label for="buscar-texto">Buscar por palabra clave:</label>
+                <input type="text" id="buscar-texto" placeholder="Ej: Guerra, Constitución...">
+            </div>
+            <div class="control-filtro">
+                <label for="filtrar-anio">Año de publicación:</label>
+                <select id="filtrar-anio">
+                    <option value="">Todos los años</option>
+                    <option value="1910">1910</option>
+                    <option value="1925">1925</option>
+                    <option value="1945">1945</option>
+                </select>
+            </div>
+            <div class="control-filtro">
+                <label for="filtrar-categoria">Categoría:</label>
+                <select id="filtrar-categoria">
+                    <option value="">Todas las categorías</option>
+                    <option value="Política">Política</option>
+                    <option value="Ciencia">Ciencia</option>
+                    <option value="Cultura">Cultura</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- CONTENEDOR DE EJEMPLARES -->
+        <main class="galeria-archivos" id="contenedor-archivos">
+            <!-- Los elementos se inyectarán dinámicamente con JavaScript -->
+        </main>
+    </div>
+
+    <style>
+        /* --- ESTILOS CSS --- */
+        :root {
+            --borde-periodico: #333;
+            --color-papel: #fbfbf9;
+            --fuente-titulo: 'Playfair Display', Georgia, serif;
+            --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fbfbf9;
+            margin: 0;
+            padding: 0;
+            color: #111;
+          zoom.75%;
+        }
+
+        .contenedor-hemeroteca {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+/*            border: 1px solid #ccc;*/
+          padding-top: 100px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px double var(--borde-periodico);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-family: var(--fuente-titulo);
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--borde-periodico);
+            padding: 5px 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Sección de Filtros */
+        .panel-busqueda {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 15px;
+            border: 1px solid #aaa;
+            margin-bottom: 30px;
+        }
+
+        .control-filtro {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .control-filtro label {
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .control-filtro input, .control-filtro select {
+            padding: 8px;
+            border: 1px solid #777;
+            background: #fff;
+            font-family: monospace;
+        }
+
+        /* Rejilla de Artículos Históricos */
+        .galeria-archivos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .tarjeta-hemeroteca {
+            border: 1px solid #bbb;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+
+        .tarjeta-hemeroteca:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .meta-documento {
+            font-size: 0.8rem;
+            color: #555;
+            border-bottom: 1px dashed #999;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .titulo-documento {
+            font-family: var(--fuente-titulo);
+            font-size: 1.3rem;
+            margin: 0 0 10px 0;
+        }
+
+        .extracto-documento {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .btn-leer {
+            display: block;
+            text-align: center;
+            background: #222;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .btn-leer:hover {
+            background: #555;
+        }
+
+        .sin-resultados {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+        <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+
+    <script>
+        // --- LÓGICA JAVASCRIPT ---
+
+        // 1. Base de datos simulada (Hemeroteca)
+        const archivoHemeroteca = [
+            {
+                id: 1,
+                titulo: "Declaración del Estado de Emergencia Nacional",
+                fecha: "15-05-1910",
+                anio: "1910",
+                categoria: "Política",
+                extracto: "Graves conflictos en la frontera obligan al despliegue inmediato de las fuerzas de seguridad estatales.",
+                enlace: "/No_disponible"
+            },
+            {
+                id: 2,
+                titulo: "Descubrimiento Revolucionario en la Medicina Penicilina",
+                fecha: "28-09-1925",
+                anio: "1925",
+                categoria: "Ciencia",
+                extracto: "Científicos locales logran aislar un hongo capaz de detener infecciones bacterianas críticas.",
+                enlace: "/No_disponible"
+            },
+            {
+                id: 3,
+                titulo: "Gran Apertura del Teatro de la Opera Central",
+                fecha: "12-11-1925",
+                anio: "1925",
+                categoria: "Cultura",
+                extracto: "Con la presencia de las más altas esferas sociales, se inaugura el recinto cultural más grande del siglo.",
+                enlace: "/No_disponible"
+            },
+            {
+                id: 4,
+                titulo: "Tratado de Paz Firmado: Termina el Conflicto Global",
+                fecha: "02-09-1945",
+                anio: "1945",
+                categoria: "Política",
+                extracto: "Las delegaciones internacionales firman el armisticio definitivo tras seis largos años de hostilidades.",
+                enlace: "/No_disponible"
+            }
+        ];
+
+        // 2. Referencias al DOM
+        const contenedor = document.getElementById("contenedor-archivos");
+        const filtroTexto = document.getElementById("buscar-texto");
+        const filtroAnio = document.getElementById("filtrar-anio");
+        const filtroCategoria = document.getElementById("filtrar-categoria");
+
+        // 3. Función para pintar los documentos en pantalla
+        function mostrarDocumentos(documentos) {
+            contenedor.innerHTML = "";
+
+            if (documentos.length === 0) {
+                contenedor.innerHTML = `<div class="sin-resultados">No se encontraron archivos en la hemeroteca con los criterios seleccionados.</div>`;
+                return;
+            }
+
+            documentos.forEach(doc => {
+                const tarjeta = document.createElement("article");
+                tarjeta.classList.add("tarjeta-hemeroteca");
+                
+                tarjeta.innerHTML = `
+                    <div class="meta-documento">
+                        <span>📅 ${doc.fecha}</span>
+                        <span>🏷️ ${doc.categoria}</span>
+                    </div>
+                    <h2 class="titulo-documento">${doc.titulo}</h2>
+                    <p class="extracto-documento">${doc.extracto}</p>
+                    <a href="${doc.enlace}" class="btn-leer">Consultar Legajo</a>
+                `;
+                contenedor.appendChild(tarjeta);
+            });
+        }
+
+        // 4. Lógica de filtrado combinada
+        function filtrarHemeroteca() {
+            const textoBuscado = filtroTexto.value.toLowerCase();
+            const anioSeleccionado = filtroAnio.value;
+            const categoriaSeleccionada = filtroCategoria.value;
+
+            const resultadosFiltrados = archivoHemeroteca.filter(doc => {
+                const coincideTexto = doc.titulo.toLowerCase().includes(textoBuscado) || 
+                                     doc.extracto.toLowerCase().includes(textoBuscado);
+                const coincideAnio = anioSeleccionado === "" || doc.anio === anioSeleccionado;
+                const coincideCategoria = categoriaSeleccionada === "" || doc.categoria === categoriaSeleccionada;
+
+                return coincideTexto && coincideAnio && coincideCategoria;
+            });
+
+                   mostrarDocumentos(resultadosFiltrados);
+        actualizarContador(resultadosFiltrados.length);
+    }
+
+    // 5. Función extra: Actualiza el contador de legajos disponibles
+    function actualizarContador(total) {
+        const elementoContador = document.getElementById("fecha-actual");
+        elementoContador.textContent = `DOCUMENTOS ENCONTRADOS: ${total}`;
+    }
+
+    // 6. Escuchadores de eventos (Listeners) en tiempo real
+    filtroTexto.addEventListener("input", filtrarHemeroteca);
+    filtroAnio.addEventListener("change", filtrarHemeroteca);
+    filtroCategoria.addEventListener("change", filtrarHemeroteca);
+
+    // 7. Inicialización del archivo al cargar la página
+    document.addEventListener("DOMContentLoaded", () => {
+        mostrarDocumentos(archivoHemeroteca);
+        actualizarContador(archivoHemeroteca.length);
+    });
+</script>
+</body>
+</html>

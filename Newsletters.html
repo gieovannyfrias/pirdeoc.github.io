@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Newsletters</title>
+    <meta name="description" content="Enterate de boletines periódicos y despachos directos de nuestra hemeroteca histórica.">
+<meta name="keywords" content="periodico digital,noticias,nacionl,internacional"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="WebPage">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Newsletters">
+    <meta property="og:title" content="Newsletters">
+    <meta property="og:description" content="Enterate de boletines periódicos y despachos directos de nuestra hemeroteca histórica.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Newsletters">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Estilo de vida">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Newsletters">
+    <meta name="twitter:title" content="Newsletters">
+    <meta name="twitter:description" content="Enterate de boletines periódicos y despachos directos de nuestra hemeroteca histórica.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+    <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Newsletters",
+  "url": "https://pirdeoc.gieovannyfrias.com/Newsletters",
+  "description": "Enterate de boletines periódicos y despachos directos de nuestra hemeroteca histórica.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+<div class="edition">
+    <div class="contenedor-boletines">
+        <header>
+            <h1>Gaceta del Suscriptor</h1>
+            <p>Boletines periódicos y despachos directos de nuestra hemeroteca histórica</p>
+        </header>
+
+        <!-- SECCIÓN DE SUSCRIPCIÓN -->
+        <section class="seccion-suscripcion">
+            <h2>Suscríbase al Despacho Semanal</h2>
+            <p>Reciba copias fieles de los acontecimientos más importantes del siglo pasado en su casilla de correo.</p>
+            <form id="form-suscripcion" onsubmit="procesarSuscripcion(event)">
+                <div class="formulario-grupo">
+                    <input type="email" id="correo-usuario" placeholder="usuario@correo.com" required>
+                    <button type="submit" class="btn-postal">Inscribirse</button>
+                </div>
+            </form>
+            <div id="mensaje-exito" class="alerta-exito">¡Inscripción registrada con éxito en los libros de la Gaceta!</div>
+        </section>
+
+        <!-- NAVEGACIÓN Y VISOR DE BOLETINES -->
+        <main class="bloque-boletin">
+            <!-- Columna Izquierda: Historial -->
+            <aside class="lista-fechas" id="lista-boletines">
+                <!-- Se inyectan dinámicamente -->
+            </aside>
+
+            <!-- Columna Derecha: Lectura -->
+            <article class="visor-boletin">
+                <h3 id="boletin-titulo">Seleccione un boletín</h3>
+                <p id="boletin-contenido">Haga clic en cualquiera de los despachos de la columna izquierda para abrir la transcripción oficial.</p>
+            </article>
+        </main>
+    </div>
+  </div>
+    <style>
+        /* --- ESTILOS VISUALES (ESTILO GACETA POSTAL) --- */
+        :root {
+            --fondo-postal: #f3efe0;
+            --tinta-marron: #2b221a;
+            --borde-postal: #5c4a3c;
+                        --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f4f0;
+            color: var(--tinta-marron);
+            margin: 0;
+            padding: 0;
+          zoom:75%;
+        }
+      .edition{
+          display: flex;
+            justify-content: center;
+        padding-top: 100px;
+      }
+        .contenedor-boletines {
+            max-width: 1250px;
+            width: 100%;
+/*            background-color: var(--fondo-postal);*/
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px double var(--borde-postal);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            margin: 5px 0 0 0;
+        }
+
+        /* Formulario de Suscripción */
+        .seccion-suscripcion {
+            border: 1px dashed var(--borde-postal);
+            padding: 20px;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .seccion-suscripcion h2 {
+            font-size: 1.4rem;
+            margin-top: 0;
+        }
+
+        .formulario-grupo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .formulario-grupo input {
+            padding: 10px;
+            font-family: monospace;
+            border: 1px solid var(--borde-postal);
+            width: 280px;
+            background: #fff;
+        }
+
+        .btn-postal {
+            background: var(--borde-postal);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-postal:hover {
+            background: #44362b;
+        }
+
+        /* Layout de Boletines */
+        .bloque-boletin {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            border-top: 1px solid #ccc;
+            padding-top: 25px;
+        }
+
+        /* Lista de Boletines Enviados */
+        .lista-fechas {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .item-boletin {
+            background: #e6dfcb;
+            border: 1px solid #ccc;
+            padding: 12px;
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.2s;
+        }
+
+        .item-boletin:hover, .item-boletin.activo {
+            background: #d4caa8;
+            border-color: var(--borde-postal);
+            font-weight: bold;
+        }
+
+        .fecha-meta {
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Visor de Contenido */
+        .visor-boletin {
+            border: 1px solid #bbb;
+            padding: 25px;
+            min-height: 300px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .visor-boletin h3 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            border-bottom: 1px dashed #bbb;
+            padding-bottom: 10px;
+        }
+
+        .visor-boletin p {
+            line-height: 1.6;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .alerta-exito {
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 10px;
+            display: none;
+        }
+      @media (max-width: 768px) {
+
+
+  .edition {
+    padding-top: 50px; /* Reduce el espacio superior */
+    padding-inline: 10px; /* Evita que el contenedor toque los bordes físicos del teléfono */
+  }
+
+  .contenedor-boletines {
+    padding: 20px; /* Compacta el espaciado interno */
+  }
+
+  header h1 {
+    font-size: 2rem; /* Reduce el tamaño del título principal */
+  }
+
+  /* El formulario se apila verticalmente */
+  .formulario-grupo {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .formulario-grupo input {
+    width: 100%; /* El campo de texto toma todo el ancho disponible */
+    box-sizing: border-box;
+  }
+
+  .btn-postal {
+    width: 100%; /* El botón se vuelve de ancho completo para facilitar el clic táctil */
+  }
+
+  /* Cambia el grid de 2 columnas a 1 sola columna vertical */
+  .bloque-boletin {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* La lista de fechas se vuelve horizontal con scroll si es necesario */
+  .lista-fechas {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  }
+
+  .item-boletin {
+    flex: 0 0 180px; /* Ancho fijo para cada elemento en la fila horizontal */
+    text-align: center;
+  }
+
+  .visor-boletin {
+    padding: 15px; /* Reduce el relleno en la zona de lectura */
+  }
+
+  .visor-boletin p {
+    text-align: left; /* Desactiva el justificado, mejora la legibilidad en pantallas angostas */
+  }
+}
+    </style>
+        <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+
+    <script>
+        // 1. Base de datos local de boletines enviados
+        const boletinesEnviados = [
+            {
+                id: 1,
+                fecha: "Despacho #01 — Enero, 1910",
+                titulo: "Resumen de Apertura de Década",
+                contenido: "Estimado suscriptor, iniciamos este ciclo de correspondencia repasando los tensos movimientos geopolíticos en las fronteras y las nuevas regulaciones aduaneras decretadas por el consejo de ministros. Las imprentas operan a máxima capacidad para distribuir los mapas cartográficos actualizados del territorio. Recomendamos a nuestros lectores mantener cautela ante las informaciones cruzadas emitidas por delegaciones informales."
+            },
+            {
+                id: 2,
+                fecha: "Despacho #02 — Octubre, 1925",
+                titulo: "Avances de la Revolución Científica",
+                contenido: "El boletín de este mes se concentra en el asombroso aislamiento bacteriológico logrado en las academias médicas. Los corresponsales sanitarios reportan que este descubrimiento alterará para siempre el tratamiento de las afecciones respiratorias en los hospicios públicos. Asimismo, incluimos la cartelera completa de las funciones de gala programadas para el Teatro de la Ópera Central."
+            },
+            {
+                id: 3,
+                fecha: "Despacho #03 — Septiembre, 1945",
+                titulo: "Crónica de la Reconstrucción Global",
+                contenido: "Tras la confirmación del cese absoluto de hostilidades en el frente internacional, nuestro despacho analiza el despliegue de los comités de auxilio civil. Las cadenas logísticas marítimas retoman sus rutas habituales de suministro alimentario y materias primas. Adjuntamos en esta edición los decretos oficiales sobre la reestructuración de la moneda para fines comerciales."
+            }
+        ];
+
+        // 2. Elementos del DOM
+        const contenedorLista = document.getElementById("lista-boletines");
+        const visorTitulo = document.getElementById("boletin-titulo");
+        const visorContenido = document.getElementById("boletin-contenido");
+
+        // 3. Renderizar la lista de boletines en el panel lateral
+        function cargarListaBoletines() {
+            contenedorLista.innerHTML = "";
+            boletinesEnviados.forEach((bol, index) => {
+                const boton = document.createElement("button");
+                boton.classList.add("item-boletin");
+                if (index === 0) boton.classList.add("activo"); // Primer elemento activo por defecto
+
+                boton.innerHTML = `
+                    <span class="fecha-meta">${bol.fecha}</span>
+                    ${bol.titulo}
+                `;
+
+                boton.addEventListener("click", () => {
+                    // Cambiar clase activa entre elementos de la lista
+                    document.querySelectorAll(".item-boletin").forEach(b => b.classList.remove("activo"));
+                    boton.classList.add("activo");
+                    
+                    // Mostrar contenido en el visor
+                    mostrarBoletin(bol);
+                });
+
+                contenedorLista.appendChild(boton);
+            });
+        }
+
+        // 4. Mostrar el boletín seleccionado en el visor principal
+        function mostrarBoletin(boletin) {
+            visorTitulo.textContent = boletin.titulo;
+            visorContenido.textContent = boletin.contenido;
+        }
+
+        // 5. Simulación de envío del formulario de suscripción (REPARADO)
+        function procesarSuscripcion(event) {
+            event.preventDefault();
+            const inputCorreo = document.getElementById("correo-usuario");
+            const mensaje = document.getElementById("mensaje-exito");
+            
+            if (inputCorreo.value.trim() !== "") {
+                // Mostrar alerta de éxito
+                mensaje.style.display = "block";
+                
+                // Limpiar campo de texto
+                inputCorreo.value = ""; 
+                
+                // Ocultar mensaje de éxito después de 4 segundos
+                setTimeout(() => {
+                    mensaje.style.display = "none";
+                }, 4000);
+            }
+        }
+
+        // 6. Carga e inicialización por defecto al abrir el documento
+        document.addEventListener("DOMContentLoaded", () => {
+            cargarListaBoletines();
+            
+            // Muestra el primer boletín disponible de forma individual en el visor
+            if (boletinesEnviados.length > 0) {
+                mostrarBoletin(boletinesEnviados[0]);
+            }
+        });
+    </script>
+
+</body>
+</html>

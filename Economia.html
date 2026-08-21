@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Economia</title>
+    <meta name="description" content="Enterate de todas las economia nacional e internacional en nuestro periodico digital.">
+<meta name="keywords" content="periodico digital,noticias,nacionl,internacional"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="WebPage">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Economia">
+    <meta property="og:title" content="Economia">
+    <meta property="og:description" content="Enterate de todas las economia nacional e internacional en nuestro periodico digital.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Economia">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Economia">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Economia">
+    <meta name="twitter:title" content="Economia">
+    <meta name="twitter:description" content="Enterate de todas las economia nacional e internacional en nuestro periodico digital.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+    <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Economia",
+  "url": "https://pirdeoc.gieovannyfrias.com/Economia",
+  "description": "Enterate de todas las economia nacional e internacional en nuestro periodico digital.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+
+    <!-- TICKER DE MERCADOS SUPERIOR DINÁMICO -->
+    <div class="ticker-mercados-superior" id="ticker-live">
+        <div class="ticker-item">S&P 500: <span class="sube">+0.54%</span></div>
+        <div class="ticker-item">DOW JONES: <span class="baja">-0.12%</span></div>
+        <div class="ticker-item">NASDAQ 100: <span class="sube">+1.18%</span></div>
+        <div class="ticker-item">NIXKEI 225: <span class="sube">+0.82%</span></div>
+        <div class="ticker-item">EURO STOXX 50: <span class="baja">-0.45%</span></div>
+        <div class="ticker-item">FTSE 100: <span class="sube">+0.22%</span></div>
+    </div>
+
+    <main class="portada-economia">
+        
+        <!-- ENCABEZADO EDITORIAL -->
+        <div class="economia-header">
+            <h3>Sección C // Finanzas & Macroeconomía</h3>
+            <span class="reloj-bursatil" id="fecha-bursatil">Cargando mercados...</span>
+        </div>
+
+        <!-- REJILLA DE TRES COLUMNAS -->
+        <div class="grid-economia">
+            
+            <!-- Columna 1: Gran Lead Económico -->
+            <article class="noticia-analisis-lead">
+                <div class="enlace-img-wrapper">
+                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Gráficas financieras">
+                </div>
+                <h2 class="titular-macro"><a href="#">Bancos centrales coordinan ajustes de tasas ante la desaceleración de la liquidez global</a></h2>
+                <p class="extracto-macro">La Reserva Federal y el Banco Central Europeo sugieren un freno en la flexibilización cuantitativa tras el repunte de los costos de fletes marítimos y la estabilización de los bonos soberanos a largo plazo.</p>
+                <div class="meta-financiera">
+                    <span>Por Marcus Vance</span>
+                    <span>Macroeconomía</span>
+                </div>
+            </article>
+
+            <!-- Columna Central: Reportes de Empresas y Materias Primas -->
+            <div class="columna-empresas">
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">NVDA:NASDAQ</span>
+                  <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+                    <h4><a href="#">Demanda de microchips de arquitectura cuántica impulsa máximos en las firmas de semiconductores</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Los reportes del segundo trimestre superan las expectativas de Wall Street en un doce por ciento estructural.</p>
+                </article>
+
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">XOM:NYSE</span>
+                                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+
+                    <h4><a href="#">Corporaciones energéticas ajustan inversiones en infraestructura marina tras el recorte de cuotas</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Las firmas integradas desvían flujos de capital hacia terminales automatizadas de almacenamiento licuado.</p>
+                </article>
+
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">XOM:NYSE</span>
+                                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+
+                    <h4><a href="#">Corporaciones energéticas ajustan inversiones en infraestructura marina tras el recorte de cuotas</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Las firmas integradas desvían flujos de capital hacia terminales automatizadas de almacenamiento licuado.</p>
+                </article>
+              
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">XOM:NYSE</span>
+                                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+
+                    <h4><a href="#">Corporaciones energéticas ajustan inversiones en infraestructura marina tras el recorte de cuotas</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Las firmas integradas desvían flujos de capital hacia terminales automatizadas de almacenamiento licuado.</p>
+                </article>
+              
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">XOM:NYSE</span>
+                                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+
+                    <h4><a href="#">Corporaciones energéticas ajustan inversiones en infraestructura marina tras el recorte de cuotas</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Las firmas integradas desvían flujos de capital hacia terminales automatizadas de almacenamiento licuado.</p>
+                </article>
+              
+                <article class="reporte-financiero">
+                    <span class="empresa-ticker">XOM:NYSE</span>
+                                    <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Vista satelital global" class="img_1">
+
+                    <h4><a href="#">Corporaciones energéticas ajustan inversiones en infraestructura marina tras el recorte de cuotas</a></h4>
+                    <p class="extracto-macro" style="font-size: 13px;">Las firmas integradas desvían flujos de capital hacia terminales automatizadas de almacenamiento licuado.</p>
+                </article>
+                <div class="commodities-box">
+                    <h5>Mercado de Materias Primas</h5>
+                    <div class="commodity-linea">
+                        <span>Oro (Oz)</span>
+                        <span class="cambio-valor sube">2,482.50 USD</span>
+                    </div>
+                    <div class="commodity-linea">
+                        <span>Crudo Brent (Bbl)</span>
+                        <span class="cambio-valor baja">78.40 USD</span>
+                    </div>
+                    <div class="commodity-linea">
+                        <span>Cobre (Lb)</span>
+                        <span class="cambio-valor sube">4.12 USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Destacada Derecha: Alambre de Índices con Scroll -->
+            <aside class="columna-alambre">
+                <h4>Flujo de Información</h4>
+                <div class="scroll-cables-macro">
+                    
+                    <div class="item-cable">
+                        <span class="hora-cable">08:42 // Urgente</span>
+                        <p><a href="#">Rendimiento de los bonos del Tesoro a 10 años sube ligeramente al 4.15% antes del reporte de manufactura.</a></p>
+                    </div>
+
+                    <div class="item-cable">
+                        <span class="hora-cable">08:15 // En Desarrollo</span>
+                        <p><a href="#">Yen japonés se estabiliza frente al dólar tras la intervención discreta en el mercado interbancario de Tokio.</a></p>
+                    </div>
+
+                    <div class="item-cable">
+                        <span class="hora-cable">07:50 // Europa</span>
+                        <p><a href="#">Producción industrial en la Eurozona registra una contracción del 0.3% debido al costo de insumos básicos.</a></p>
+                    </div>
+
+                    <div class="item-cable">
+                        <span class="hora-cable">07:10 // Logística</span>
+                        <p><a href="#">Principales fondos indexados aumentan exposición en empresas mercantiles orientadas al Ártico.</a></p>
+                    </div>
+
+                </div>
+            </aside>
+<!-- SECCIÓN: FONDOS Y CAPITAL DE RIESGO (CONTENIDO EXTRA DE COLUMNA) -->
+<div class="seccion-fondos-capital">
+    <div class="fondos-header">
+        <h4>Movimientos de Capital // Fondos Globales</h4>
+    </div>
+
+    <!-- CONTENEDOR CON BARRA DE DESLIZAMIENTO VERTICAL PREMIUM -->
+    <div class="scroll-fondos-contenedor">
+        <div class="lista-fondos-corporativos">
+            
+            <!-- Entrada 1 -->
+            <div class="fondo-capital-item">
+                <span class="categoria-capital global">Inversión Soberana</span>
+                <h5><a href="#">Fondo de Noruega incrementa su exposición en infraestructura logística para rutas árticas alternativas.</a></h5>
+            </div>
+
+            <!-- Entrada 2 -->
+            <div class="fondo-capital-item">
+                <span class="categoria-capital riesgo">Venture Capital</span>
+                <h5><a href="#">Consorcios de capital de riesgo desvían flujos financieros hacia desarrolladoras de software de encriptación cuántica.</a></h5>
+            </div>
+
+            <!-- Entrada 3 -->
+            <div class="fondo-capital-item">
+                <span class="categoria-capital adquisicion">Fusiones</span>
+                <h5><a href="#">Firmas automotrices del norte unifican laboratorios de desarrollo para acelerar la autonomía de transporte pesado.</a></h5>
+            </div>
+
+            <!-- Entrada 4 -->
+            <div class="fondo-capital-item">
+                <span class="categoria-capital global">Bonos Verdes</span>
+                <h5><a href="#">Bancos comerciales de la Eurozona abren líneas de financiamiento preferencial para plantas de hidrógeno licuado.</a></h5>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- SECCIÓN: REPORTE DEL CONSUMIDOR (CONTENIDO EXTRA SIN NÚMEROS) -->
+<div class="seccion-confianza-consumidor">
+    <div class="confianza-header">
+        <h4>Tendencias de Consumo // Comercio Minorista</h4>
+    </div>
+
+    <!-- CONTENEDOR CON BARRA DE DESLIZAMIENTO VERTICAL PREMIUM -->
+    <div class="scroll-confianza-contenedor">
+        <div class="lista-reportes-consumo">
+            
+            <!-- Reporte 1 -->
+            <div class="reporte-consumo-item">
+                <span class="origen-reporte">Zona Euro</span>
+                <h5>Giro hacia marcas de distribución local</h5>
+                <p class="texto-reporte">Los ajustes en los costos de transporte marítimo internacional han provocado que las cadenas de supermercados sustituyan insumos frescos agrícolas por alternativas de proveeduría regional interna.</p>
+            </div>
+
+            <!-- Reporte 2 -->
+            <div class="reporte-consumo-item">
+                <span class="origen-reporte">América del Norte</span>
+                <h5>Adopción de plataformas logísticas automatizadas</h5>
+                <p class="texto-reporte">Los usuarios minoristas priorizan portales que ofrecen certidumbre en los tiempos de entrega sobre aquellos con descuentos agresivos, reconfigurando las inversiones en centros de distribución.</p>
+            </div>
+
+            <!-- Reporte 3 -->
+            <div class="reporte-consumo-item">
+                <span class="origen-reporte">Asia-Pacífico</span>
+                <h5>Moderación en el mercado de bienes tecnológicos</h5>
+                <p class="texto-reporte">Se registra una extensión en los ciclos de renovación de dispositivos móviles comerciales. Los consumidores optan por contratos de mantenimiento extendido ante la falta de innovaciones radicales en hardware.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- SECCIÓN: GACETA DE LECTURA (CONTENIDO EXTRA CULTURAL) -->
+<div class="seccion-gaceta-lectura">
+    <div class="gaceta-lectura-header">
+        <h4>Reseñas Editoriales // Biblioteca Financiera</h4>
+    </div>
+
+    <!-- CONTENEDOR CON BARRA DE DESLIZAMIENTO VERTICAL PREMIUM -->
+    <div class="scroll-lecturas-contenedor">
+        <div class="lista-reseñas-libros">
+            
+            <!-- Reseña 1 -->
+            <div class="reseña-libro-item">
+                <span class="categoria-libro">Ensayo Global</span>
+                <h5>La velocidad del algoritmo</h5>
+                <p class="critica-texto">Una disección magistral de cómo los modelos de alta frecuencia están reconfigurando las decisiones de infraestructura física en los océanos. Imprescindible para comprender el nuevo mapa de cables marinos.</p>
+                <span class="autor-libro">Por Dr. Albert Vance</span>
+            </div>
+
+            <!-- Reseña 2 -->
+            <div class="reseña-libro-item">
+                <span class="categoria-libro">Historia Económica</span>
+                <h5>Gacetas de marfil y salmón</h5>
+                <p class="critica-texto">Un viaje fascinante por la evolución tipográfica y el diseño de la prensa económica desde las primeras hojas impresas en Amberes hasta el scroll digital contemporáneo de Wall Street.</p>
+                <span class="autor-libro">Por Helena Rostova</span>
+            </div>
+
+            <!-- Reseña 3 -->
+            <div class="reseña-libro-item">
+                <span class="categoria-libro">Monografía</span>
+                <h5>Soberanía del silicio</h5>
+                <p class="critica-texto">Un análisis de campo sobre el impacto geopolítico que provocó el desvío de capitales hacia el sudeste asiático y la autonomía de las nuevas plantas de fundición cuántica automatizadas.</p>
+                <span class="autor-libro">Por Kenji Sato</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="modulo-noticias"></div>
+                    <div id="contenedor-noticias"></div>
+        </div>
+    </main>
+  
+    <style>
+        /* --- VARIABLES BUR SÁTILES Y ESTILOS --- */
+         :root {
+            --color-tinta: #121212;
+            --color-tinta-suave: #4a4a4a;
+            --color-borde-fino: #dfdfdf;
+            --color-alerta-bg: #bd1a1a;
+            --color-fondo: #fbfbf9;  
+              --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+            --fuente-titulares: 'Fraunces', Georgia, serif;
+            --fuente-textos: 'Plus Jakarta Sans', Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f2e9;
+            margin: 0;
+            padding: 0;
+            font-family: var(--fuente-textos);
+            color: var(--color-tinta);
+                    zoom:75%;
+
+        }
+/* Microetiquetas de contexto */
+.tiempo-publicacion { font-size: 11px; color: var(--color-acento-rojo); font-weight: 700; }
+.match-lectura { font-size: 11px; color: #137333; font-weight: 700; }
+.contador-posicion { font-size: 12px; font-weight: 800; color: #b08d5c; }
+
+/* Adaptación para pantallas oscuras */
+body.modo-lectura .descubrimiento-feed { background-color: #1e1e1e; }
+body.modo-lectura .tab-btn:hover { background-color: rgba(255, 255, 255, 0.05); color: #fff; }
+body.modo-lectura .tab-btn.activo { background-color: #ffffff; color: #121212; }
+body.modo-lectura .tarjeta-mini { border-bottom-color: rgba(255,255,255,0.05); }
+body.modo-lectura .panel-contenido::-webkit-scrollbar-thumb { background: #444; } /* Ajuste de barra en modo oscuro */
+
+/* MODIFICACIÓN PARA MODO LECTURA */
+body.modo-lectura { --color-fondo: #121212; --color-tinta: #f5f5f5; --color-gris-oscuro: #b3b3b3; --color-borde: #333333; }
+body.modo-lectura .paywall-contenido { background: #1e1e1e; }
+body.modo-lectura .barra-navegacion { background: rgba(18,18,18,0.95); }
+        /* Ticker Superior de Mercados */
+        .ticker-mercados-superior {
+            max-width: 1200px;
+            margin: 0 auto 16px auto;
+/*            background-color: var(--color-tinta);*/
+            color: #4a4a4a;
+            display: flex;
+            gap: 24px;
+            padding: 8px 16px;
+            font-family: var(--fuente-valores);
+            font-size: 11px;
+            text-transform: uppercase;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-radius: 2px;
+          padding-top: 100px;
+        }
+        .ticker-item span { font-weight: 700; }
+        .ticker-item .sube { color: #34a853; }
+        .ticker-item .baja { color: #ea4335; }
+
+        /* Contenedor de Portada */
+        .portada-economia {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--color-papel);
+/*            border: 1px solid var(--color-borde-fino);*/
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            box-sizing: border-box;
+        }
+
+        /* Encabezado */
+        .economia-header {
+            border-bottom: 2px solid var(--color-tinta);
+            padding-bottom: 6px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .economia-header h3 {
+            margin: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+        }
+
+        .reloj-bursatil {
+            font-family: var(--fuente-valores);
+            font-size: 11px;
+            color: var(--color-tinta-suave);
+        }
+
+        /* Grid de 3 Columnas */
+        .grid-economia {
+            display: grid;
+            grid-template-columns: 2fr 1.1fr 0.9fr;
+            gap: 30px;
+        }
+
+        /* Columna Principal */
+        .noticia-analisis-lead {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .enlace-img-wrapper {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Protege contra distorsiones */
+            overflow: hidden;
+            border-radius: 2px;
+        }
+
+        .enlace-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .noticia-analisis-lead:hover img { transform: scale(1.02); }
+
+        .titular-macro {
+            font-family: var(--fuente-titulares);
+            font-size: 34px;
+            margin: 16px 0 10px 0;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
+        .titular-macro a, .reporte-financiero h4 a, .item-cable a {
+            color: var(--color-tinta);
+            text-decoration: none;
+        }
+        .titular-macro a:hover, .reporte-financiero h4 a:hover {
+            color: var(--color-oro);
+        }
+
+        .extracto-macro {
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: var(--color-tinta-suave);
+            margin: 0 0 16px 0;
+        }
+
+        .meta-financiera {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-top: 1px dashed var(--color-borde-fino);
+            padding-top: 10px;
+            margin-top: auto;
+        }
+
+        /* Columna Central: Reportes de Empresas */
+        .columna-empresas {
+    border-left: 1px solid var(--color-borde-fino);
+    border-right: 1px solid var(--color-borde-fino);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    /* Extra: Barra de deslizamiento vertical */
+    max-height: 800px;                  /* Límite de altura para activar el scroll */
+    overflow-y: auto;                   /* Activa el scroll solo si el contenido desborda */
+    scrollbar-width: thin;              /* Barra delgada en Firefox */
+    scrollbar-color: var(--color-borde-fino) transparent; /* Colores en Firefox */
+}
+
+/* Personalización del scroll en Chrome, Edge y Safari */
+.columna-empresas::-webkit-scrollbar {
+    width: 6px;                         /* Grosor de la barra */
+}
+
+.columna-empresas::-webkit-scrollbar-track {
+    background: transparent;            /* Fondo invisible de la pista */
+}
+
+.columna-empresas::-webkit-scrollbar-thumb {
+    background: var(--color-borde-fino); /* Color del tirador */
+    border-radius: 10px;                /* Bordes redondeados */
+}
+
+.columna-empresas::-webkit-scrollbar-thumb:hover {
+    background: var(--color-sube);      /* Cambia al color corporativo de subida al pasar el mouse */
+}
+      .reporte-financiero .img_1{
+           width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center; 
+  display: block;
+      }
+.reporte-financiero h4 {
+    font-family: var(--fuente-titulares);
+    font-size: 19px;
+    margin: 4px 0 8px 0;
+    line-height: 1.25;
+}
+
+.empresa-ticker {
+    font-family: var(--fuente-valores);
+    font-size: 10px;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.04);
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+/* Módulo Materias Primas */
+.commodities-box {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid var(--color-borde-fino);
+}
+
+.commodities-box h5 {
+    margin: 0 0 10px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.commodity-linea {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: var(--fuente-valores);
+    margin-bottom: 6px;
+}
+.commodity-linea:last-child { margin-bottom: 0; }
+.cambio-valor.sube { color: var(--color-sube); }
+.cambio-valor.baja { color: var(--color-baja); }
+
+        /* Columna Derecha: Alambre de Índices con Scroll */
+        .columna-alambre h4 {
+            margin: 0 0 14px 0;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--color-tinta);
+            padding-bottom: 6px;
+        }
+
+        .scroll-cables-macro {
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 8px;
+        }
+
+        .scroll-cables-macro::-webkit-scrollbar { width: 4px; }
+        .scroll-cables-macro::-webkit-scrollbar-track { background: transparent; }
+        .scroll-cables-macro::-webkit-scrollbar-thumb { background: var(--color-borde-fino); }
+        .scroll-cables-macro::-webkit-scrollbar-thumb:hover { background: var(--color-oro); }
+
+        .item-cable {
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px dashed var(--color-borde-fino);
+        }
+
+        .item-cable p {
+            margin: 4px 0 0 0;
+            font-size: 12.5px;
+            line-height: 1.4;
+        }
+
+        .hora-cable {
+            font-family: var(--fuente-valores);
+            font-size: 10px;
+            color: var(--color-oro);
+            font-weight: 700;
+        }
+
+        /* --- RESPONSIVE CSS --- */
+        @media (max-width: 1024px) {
+            .grid-economia { grid-template-columns: 1fr 1fr; }
+            .columna-alambre { grid-column: 1 / span 2; margin-top: 20px; border-top: 1px solid var(--color-borde-fino); padding-top: 20px; }
+        }
+
+        @media (max-width: 768px) {
+            .grid-economia { grid-template-columns: 1fr; }
+            .columna-empresas { border-left: none; border-right: none; padding: 0; }
+            .columna-alambre { grid-column: 1; }
+        }
+/*      cuarta columna*/
+      /* --- SECCIÓN FONDOS Y CAPITAL --- */
+.seccion-fondos-capital {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde-fino);
+}
+
+.fondos-header h4 {
+    margin: 0 0 14px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-tinta);
+    font-weight: 800;
+}
+
+/* Caja de desplazamiento vertical con dimensiones controladas */
+.scroll-fondos-contenedor {
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+/* Personalización del scrollbar premium (Chrome, Safari, Edge) */
+.scroll-fondos-contenedor::-webkit-scrollbar {
+    width: 4px;
+}
+.scroll-fondos-contenedor::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scroll-fondos-contenedor::-webkit-scrollbar-thumb {
+    background-color: var(--color-borde-fino);
+    border-radius: 2px;
+}
+.scroll-fondos-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-oro);
+}
+
+/* Soporte nativo para Firefox */
+.scroll-fondos-contenedor {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-borde-fino) transparent;
+}
+
+/* Elementos individuales del listado */
+.fondo-capital-item {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed var(--color-borde-fino);
+}
+.fondo-capital-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Etiquetas corporativas tácticas */
+.categoria-capital {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+.categoria-capital.global { background-color: rgba(22, 22, 22, 0.05); color: var(--color-tinta-suave); }
+.categoria-capital.riesgo { background-color: rgba(197, 34, 31, 0.1); color: var(--color-baja); }
+.categoria-capital.adquisicion { background-color: rgba(19, 115, 51, 0.1); color: var(--color-sube); }
+
+.fondo-capital-item h5 {
+    margin: 0;
+    font-family: var(--fuente-textos);
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.fondo-capital-item h5 a {
+    color: var(--color-tinta);
+    text-decoration: none;
+}
+.fondo-capital-item h5 a:hover {
+    color: var(--color-oro);
+    text-decoration: underline;
+}
+/*quinta columna*/
+      /* --- SECCIÓN CONFIANZA DEL CONSUMIDOR --- */
+.seccion-confianza-consumidor {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde-fino);
+}
+
+.confianza-header h4 {
+    margin: 0 0 14px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-tinta);
+    font-weight: 800;
+}
+
+/* Caja de desplazamiento vertical */
+.scroll-confianza-contenedor {
+    max-height: 270px;
+    overflow-y: auto;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+/* Personalización del scrollbar premium (Chrome, Safari, Edge) */
+.scroll-confianza-contenedor::-webkit-scrollbar {
+    width: 4px;
+}
+.scroll-confianza-contenedor::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scroll-confianza-contenedor::-webkit-scrollbar-thumb {
+    background-color: var(--color-borde-fino);
+    border-radius: 2px;
+}
+.scroll-confianza-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-oro);
+}
+
+/* Soporte para Firefox */
+.scroll-confianza-contenedor {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-borde-fino) transparent;
+}
+
+/* Elementos del listado */
+.reporte-consumo-item {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed var(--color-borde-fino);
+}
+.reporte-consumo-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.origen-reporte {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-oro);
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.reporte-consumo-item h5 {
+    margin: 0 0 4px 0;
+    font-family: var(--fuente-textos);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-tinta);
+}
+
+.texto-reporte {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--color-tinta-suave);
+}
+/*sexta columna */
+      /* --- SECCIÓN GACETA DE LECTURA --- */
+.seccion-gaceta-lectura {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde-fino);
+}
+
+.gaceta-lectura-header h4 {
+    margin: 0 0 14px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-tinta);
+    font-weight: 800;
+}
+
+/* Caja de desplazamiento vertical */
+.scroll-lecturas-contenedor {
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+/* Personalización de la barra de desplazamiento premium (Chrome, Safari, Edge) */
+.scroll-lecturas-contenedor::-webkit-scrollbar {
+    width: 4px;
+}
+.scroll-lecturas-contenedor::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scroll-lecturas-contenedor::-webkit-scrollbar-thumb {
+    background-color: var(--color-borde-fino);
+    border-radius: 2px;
+}
+.scroll-lecturas-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-oro);
+}
+
+/* Soporte nativo para Firefox */
+.scroll-lecturas-contenedor {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-borde-fino) transparent;
+}
+
+/* Elementos del listado */
+.reseña-libro-item {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed var(--color-borde-fino);
+}
+.reseña-libro-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.categoria-libro {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-oro);
+    display: block;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.reseña-libro-item h5 {
+    margin: 0 0 4px 0;
+    font-family: var(--fuente-titulares);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-tinta);
+}
+
+.critica-texto {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--color-tinta-suave);
+    font-style: italic; /* Aporta el tono de reseña o correspondencia */
+}
+
+.autor-libro {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-tinta);
+    text-transform: uppercase;
+    display: block;
+}
+
+    </style>
+  <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+<script src="src/components/Ultimas_noticias.js" defer></script>
+  
+  <script src="src/components/Noticias_vivo.js"  defer></script>
+    <script>
+        // --- JAVASCRIPT FINANCIERO AUTÓNOMO ---
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Reloj y Fecha Bursátil Dinámica
+            function actualizarFechaBursatil() {
+                const nodoFecha = document.getElementById('fecha-bursatil');
+                if (!nodoFecha) return;
+
+                const ahora = new Date();
+                const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                let textoFecha = ahora.toLocaleDateString('es-MX', opciones);
+                textoFecha = textoFecha.charAt(0).toUpperCase() + textoFecha.slice(1);
+
+                const horas = String(ahora.getHours()).padStart(2, '0');
+                const minutos = String(ahora.getMinutes()).padStart(2, '0');
+                
+                nodoFecha.textContent = `${textoFecha} — ${horas}:${minutos} BURSÁTIL`;
+            }
+
+            // 2. Fluctuación Financiera Aleatoria (Simulación de Mercado Vivo)
+            function simularFlujosMercado() {
+                const itemsTicker = document.querySelectorAll('#ticker-live .ticker-item span');
+                
+                itemsTicker.forEach(item => {
+                    const cambioAleatorio = (Math.random() * (2.10 - 0.05) + 0.05).toFixed(2);
+                    const elMercadoSube = Math.random() > 0.45; // Sesgo positivo leve
+
+                    if (elMercadoSube) {
+                        item.className = 'sube';
+                        item.textContent = `+${cambioAleatorio}%`;
+                    } else {
+                        item.className = 'baja';
+                        item.textContent = `-${cambioAleatorio}%`;
+                    }
+                });
+            }
+
+            // Ejecución e intervalos de tiempo precisos sin trackers externos
+            actualizarFechaBursatil();
+            simularFlujosMercado();
+            
+            setInterval(actualizarFechaBursatil, 30000); // Sincroniza reloj cada 30 segundos
+            setInterval(simularFlujosMercado, 4000);     // Fluctuación de activos cada 4 segundos
+        });
+      //mercado de materia prima
+document.addEventListener("DOMContentLoaded", () => {
+    // Selecciona todas las líneas de commodities
+    const lineasCommodities = document.querySelectorAll('.commodity-linea');
+
+    lineasCommodities.forEach(linea => {
+        const valorSpan = linea.querySelector('.cambio-valor');
+        if (!valorSpan) return;
+
+        // Limpia espacios y lee el texto actual
+        const textoValor = valorSpan.textContent.trim();
+
+        // Evita duplicar flechas si el script se ejecuta varias veces
+        if (!textoValor.startsWith('▲') && !textoValor.startsWith('▼')) {
+            if (valorSpan.classList.contains('sube')) {
+                valorSpan.textContent = `▲ ${textoValor}`;
+            } else if (valorSpan.classList.contains('baja')) {
+                valorSpan.textContent = `▼ ${textoValor}`;
+            }
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
