@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Anuncios clasificados</title>
+    <meta name="description" content="Anuncios Clasificados y Mensajes Breves.">
+<meta name="keywords" content="periodico,noticias"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Anuncios clasificados">
+    <meta property="og:title" content="Anuncios clasificados">
+    <meta property="og:description" content="Anuncios Clasificados y Mensajes Breves.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Anuncios_clasificados">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Anuncios clasificados">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Anuncios_clasificados">
+    <meta name="twitter:title" content="Anuncios clasificados">
+    <meta name="twitter:description" content="Anuncios Clasificados y Mensajes Breves.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+    <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Anuncios clasificados",
+  "url": "https://pirdeoc.gieovannyfrias.com/404",
+  "description": "Anuncios Clasificados y Mensajes Breves.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+<div class="edition">
+    <div class="contenedor-clasificados">
+        <header>
+            <h1>Anuncios Clasificados y Mensajes Breves</h1>
+            <div style="font-size: 0.85rem; font-weight: bold; text-align: center; margin-top: 5px;">
+                SECCIÓN ECONÓMICA — INSERCIONES DE PARTICULARES
+            </div>
+        </header>
+
+        <!-- FORMULARIO DE REDACCIÓN -->
+        <section class="seccion-redaccion">
+            <h2>Redacte su Propio Anuncio de Época</h2>
+            <form id="form-clasificado" onsubmit="publicarAnuncio(event)">
+                <div class="formulario-bloque">
+                    
+                    <div class="campos-izquierda">
+                        <div class="control-entrada">
+                            <label for="aviso-seccion">Sección Destino:</label>
+                            <select id="aviso-seccion">
+                                <option value="empleo">Demandas de Trabajo</option>
+                                <option value="ventas">Ventas y Traspasos</option>
+                                <option value="mensajes">Llamamientos y Notas</option>
+                            </select>
+                        </div>
+                        <div class="control-entrada">
+                            <label for="aviso-texto">Texto del Anuncio (Mayúsculas iniciales recomendadas):</label>
+                            <textarea id="aviso-texto" placeholder="Ej: SE OFRECE dactilógrafo con experiencia..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="panel-derecha">
+                        <div class="precio-lineal" id="costo-lineas">
+                            TASA: 0 CENTAVOS
+                        </div>
+                        <button type="submit" class="btn-imprimir-aviso">Insertar en Prensa</button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+        <!-- PIZARRA GENERAL DE ANUNCIOS -->
+        <main class="pizarra-avisos">
+            
+            <!-- Columna Empleo -->
+            <section class="categoria-columna">
+                <h3 class="categoria-titulo">Trabajo</h3>
+                <div class="lista-anuncios" id="col-empleo">
+                    <div class="anuncio-item">
+                        <strong>Se ofrece</strong> joven instruido para tareas de oficina, teneduría de libros básica y caligrafía impecable. Buenas referencias de antiguos empleadores. Dirigirse por carta a esta imprenta bajo las iniciales J.M.
+                    </div>
+                    <div class="anuncio-item">
+                        <strong>Se necesita</strong> cocinera experta para casa de familia patricia en el distrito centro. Imprescindible saber hornear pan y repostería fina. Trato familiar y asignación mensual puntual.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Columna Ventas -->
+            <section class="categoria-columna">
+                <h3 class="categoria-titulo">Ventas</h3>
+                <div class="lista-anuncios" id="col-ventas">
+                    <div class="anuncio-item">
+                        <strong>Traspaso</strong> botica céntrica por motivos de viaje imprevisto. Inventario completo de frascos de botamen, balanzas de precisión y fórmulas activas aprobadas por el consejo de higiene.
+                    </div>
+                    <div class="anuncio-item">
+                        <strong>Ocasión:</strong> Carruaje de tracción a sangre en perfecto estado de conservación, tapizado en cuero negro legítimo. Se incluye juego de arneses completo. Consultar precio en la caballeriza de la calle Mayor.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Columna Mensajes -->
+            <section class="categoria-columna">
+                <h3 class="categoria-titulo">Llamamientos</h3>
+                <div class="lista-anuncios" id="col-mensajes">
+                    <div class="anuncio-item">
+                        <strong>Gratificación:</strong> Extraviado reloj de bolsillo de oro con inscripciones familiares grabadas en la tapa trasera, entre la plaza principal y la estación de trenes. Se recompensará generosamente su devolución.
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+  </div>
+    <style>
+        /* --- ESTILOS DE PRENSA TRADICIONAL --- */
+        :root {
+            --fondo-prensa: #f7f3e3;
+            --tinta-fuerte: #111111;
+            --borde-delgado: #444444;
+                                  --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+
+        }
+
+        body {
+            background-color: #ededdf;
+            color: var(--tinta-fuerte);
+            margin: 0;
+            padding: 0;
+          zoom:75%;
+        }
+      .edition{
+              display: flex;
+            justify-content: center;
+        padding-top: 100px;
+      }
+        .contenedor-clasificados {
+            max-width: 950px;
+            width: 100%;
+/*            background-color: var(--fondo-prensa);*/
+            padding: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+/*            border: 2px solid var(--tinta-fuerte);*/
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 5px double var(--tinta-fuerte);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2.6rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        /* Formulario para redactar avisos */
+        .seccion-redaccion {
+/*            background-color: #ede6ce;*/
+            border: 1px solid var(--tinta-fuerte);
+            padding: 20px;
+            margin-bottom: 35px;
+        }
+
+        .seccion-redaccion h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            border-bottom: 1px dashed var(--tinta-fuerte);
+            padding-bottom: 8px;
+        }
+
+        .formulario-bloque {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .formulario-bloque { grid-template-columns: 1fr; }
+        }
+
+        .campos-izquierda {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .panel-derecha {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+/*            background: #e3d9bc;*/
+            border: 1px solid #aaa;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .control-entrada {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .control-entrada label {
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .control-entrada select, .control-entrada textarea {
+            padding: 8px;
+            border: 1px solid var(--borde-delgado);
+            background: #fff;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .control-entrada textarea {
+            resize: vertical;
+            height: 70px;
+        }
+
+        .precio-lineal {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-imprimir-aviso {
+            background: var(--tinta-fuerte);
+            color: var(--fondo-prensa);
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-imprimir-aviso:hover {
+            background: #333;
+        }
+
+        /* Rejilla de Clasificados */
+        .pizarra-avisos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .categoria-columna {
+            border: 1px solid var(--tinta-fuerte);
+            padding: 15px;
+/*            background: var(--fondo-prensa);*/
+        }
+
+        .categoria-titulo {
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            text-align: center;
+            border-bottom: 3px double var(--tinta-fuerte);
+            margin: 0 0 15px 0;
+            padding-bottom: 5px;
+/*            background: #e5dcbf;*/
+        }
+
+        .lista-anuncios {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .anuncio-item {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            text-align: justify;
+            border-bottom: 1px dashed #999;
+            padding-bottom: 10px;
+        }
+
+        .anuncio-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .anuncio-item strong {
+            text-transform: uppercase;
+        }
+    </style>
+        <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+
+      <script>
+        // 1. Instancias del DOM
+        const txtAviso = document.getElementById("aviso-texto");
+        const selectSeccion = document.getElementById("aviso-seccion");
+        const panelCosto = document.getElementById("costo-lineas");
+
+        // Tarifa fija de época: 10 centavos por cada bloque de 30 caracteres (simulando una línea impresa)
+        const costoPorLinea = 10;
+
+        // 2. Función para calcular el arancel de impresión sobre la marcha
+        function calcularCostoEnvio() {
+            const caracteres = txtAviso.value.length;
+            
+            // Calculamos cuántas líneas ocupa (mínimo 1 si hay texto escrito)
+            const lineasCalculadas = caracteres > 0 ? Math.ceil(caracteres / 30) : 0;
+            const totalArancel = lineasCalculadas * costoPorLinea;
+
+            panelCosto.textContent = `TASA: ${totalArancel} CENTAVOS`;
+        }
+
+        // 3. Función para inyectar el anuncio redactado en la pizarra física
+        function publicarAnuncio(event) {
+            event.preventDefault();
+
+            const textoOriginal = txtAviso.value.trim();
+            const seccionDestino = selectSeccion.value;
+
+            if (textoOriginal === "") return;
+
+            // Buscamos el contenedor correspondiente de la columna
+            const contenedorColumna = document.getElementById(`col-${seccionDestino}`);
+
+            // Creamos la nueva tarjeta de prensa
+            const nuevoAnuncio = document.createElement("div");
+            nuevoAnuncio.classList.add("anuncio-item");
+            
+            // Separamos la primera palabra para darle el estilo clásico en negrita (strong)
+            const espacioIndice = textoOriginal.indexOf(" ");
+            if (espacioIndice !== -1) {
+                const primeraPalabra = textoOriginal.substring(0, espacioIndice);
+                const restoTexto = textoOriginal.substring(espacioIndice);
+                nuevoAnuncio.innerHTML = `<strong>${primeraPalabra}</strong>${restoTexto}`;
+            } else {
+                nuevoAnuncio.innerHTML = `<strong>${textoOriginal}</strong>`;
+            }
+
+            // Insertar al inicio de la lista correspondiente
+            contenedorColumna.insertBefore(nuevoAnuncio, contenedorColumna.firstChild);
+
+            // Reiniciar los campos del panel de control
+            txtAviso.value = "";
+            calcularCostoEnvio();
+        }
+
+        // 4. Listeners para el cálculo automático en tiempo real y envío
+        txtAviso.addEventListener("input", calcularCostoEnvio);
+        document.getElementById("form-clasificado").addEventListener("submit", publicarAnuncio);
+    </script>
+</body>
+</html>
