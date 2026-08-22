@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+      <!-- Estilos, Fuentes e Iconos -->
+    <link rel="icon" href="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+    <title>Publicación</title>
+    <meta name="description" content="El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes.">
+<meta name="keywords" content="periodico digital,noticias,nacionl,internacional"/>
+<meta name="author" content="Gieovanny Frías">
+  <!--  logo fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Control de Indexación y Canónicas -->
+    <link rel="canonical" href="https://pirdeoc.gieovannyfrias.com">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Integración con Teléfonos Inteligentes (UI/UX) -->
+    <meta name="theme-color" content="#1a1a1a"> <!-- Reemplaza con el color principal de tu web -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+<!-- Seguridad de Privacidad (No envía datos de origen a enlaces externos) -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<!-- Pistas de Rendimiento para Redes Móviles (Client Hints) -->
+<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width, Save-Data, ECT">
+
+<!-- Si el artículo tiene traducciones (SEO Internacional) -->
+<link rel="alternate" hreflang="en" href="https://pirdeoc.gieovannyfrias.com">
+<link rel="alternate" hreflang="x-default" href="https://pirdeoc.gieovannyfrias.com">
+
+<!-- Control de Caché (Para noticias de última hora con actualizaciones frecuentes) -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+  
+    <!-- Datos Específicos de Prensa (Open Graph) -->
+    <meta property="article:section" content="Tecnología">
+    <meta property="article:published_time" content="2026-08-17T16:00:00+00:00">
+  
+    <!-- Open Graph / Metadatos para Redes Sociales (Facebook, WhatsApp) -->
+    <meta property="og:type" content="WebPage">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Publicación">
+    <meta property="og:title" content="Publicación">
+    <meta property="og:description" content="El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes.">
+    <meta property="og:url" content="https://pirdeoc.gieovannyfrias.com/Post">
+    <meta property="og:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Publicación">
+
+    <!-- Tarjetas Exclusivas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Post">
+    <meta name="twitter:title" content="Publicación">
+    <meta name="twitter:description" content="El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes.">
+    <meta name="twitter:image" content="https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp">
+
+   <!-- Datos Estructurados Schema para Motores de Búsqueda e IA -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Publicación",
+  "url": "https://pirdeoc.gieovannyfrias.com/Post",
+  "description": "El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes.",
+  "inLanguage": "es-MX",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://pirdeoc.gieovannyfrias.com/Imagenes/Logo.webp"
+  },
+  "sameAs": [
+    "https://x.com/pirdeoc",
+    "https://facebook.com/pirdeoc",
+    "https://instagram.com/pirdeoc/",
+    "https://youtube.com/@pirdeoc"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-55-51-57-01-60",
+    "contactType": "customer service",
+    "email": "noticias@gieovannyfrias.com"
+  },
+  "copyrightYear": "2026",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pirdeoc.gieovannyfrias.com"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pirdeoc.gieovannyfrias.com/buscar?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+</head>
+<body>
+
+    <!-- BARRA DE ACCESIBILIDAD Y HERRAMIENTAS -->
+    <nav class="barra-lectura-herramientas" aria-label="Controles de lectura">
+        <div class="contenedor-herramientas">
+            <a href="/index" class="volver-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Regresar
+            </a>
+            <div class="controles-derecha">
+                <button class="btn-accion-lectura" id="btnFuentes" title="Ajustar tamaño de texto">A+</button>
+                <button class="btn-accion-lectura" id="btnOscuro" title="Alternar Modo Noche">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Línea dinámica de progreso de lectura vertical -->
+        <div class="progreso-scroll" id="indicadorProgreso"></div>
+    </nav>
+
+ <!-- CUERPO CENTRAL DE LA NOTICIA -->
+    <main class="articulo-contenedor">
+        <span class="categoria-badge">Tecnología & Globalización</span>
+        
+        <h1 class="titular-principal">El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes</h1>
+        
+        <p class="bajada-subtitulo">A medida que los bloques geopolíticos levantan aduanas sobre sus datos e infraestructuras, la estructura original de la red global enfrenta una fragmentación irreversible.</p>
+
+        <!-- Bloque de Metadatos y Acción de Compartir Nativamante -->
+        <div class="bloque-autor-fecha" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-borde); border-bottom: 1px solid var(--color-borde); padding: 14px 0; margin-bottom: 32px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Elena Rostova" class="avatar-autor">
+                <div class="metadatos-autor">
+                    <span class="nombre-autor">Elena Rostova</span>
+                 <span class="fecha-publicacion">
+    Publicado el 22 de Agosto de 2026 a las 12:20 p.m • 
+    <span class="tiempo-lectura" id="lecturaCalculada">Calculando...</span>
+</span>
+                </div>
+            </div>
+            
+            <!-- Botón de Compartición Nativo Premium -->
+            <button class="btn-accion-lectura" id="btnCompartirPost" title="Compartir este artículo" style="width: auto; height: 36px; border-radius: 20px; padding: 0 14px; font-size: 12px; display: inline-flex; align-items: center; gap: 6px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <span>Compartir</span>
+            </button>
+        </div>
+
+        <!-- Figura Multimedia (Imagen con efecto Premium) -->
+        <figure class="figura-multimedia">
+            <img src="https://lh3.googleusercontent.com/d/1ZKVltJP559XoWmaAtCDgkFKV_uqWAwz8=w1000" alt="Servidores globales interconectados">
+            <figcaption class="pie-de-foto">Nodos críticos de enrutamiento internacional en una instalación de alta seguridad en el Atlántico Norte. / Foto: AFP</figcaption>
+        </figure>
+
+        <article class="cuerpo-editorial" id="cuerpoTexto">
+            <p>La idea original de una red global única y completamente descentralizada se desvanece de forma acelerada ante las nuevas realidades geopolíticas. Lo que durante décadas se defendió como un espacio tecnológico neutral, hoy se ha convertido en el principal tablero de ajedrez donde las superpotencias buscan trazar fronteras digitales tan rígidas como las geográficas.</p>
+
+            <p>El reciente acuerdo para el Tratado de Interconexión Abierta expone una paradoja latente: bajo la bandera de mitigar monopolios corporativos, las naciones soberanas están asumiendo el control directo de los cables submarinos y los centros de datos. Este proceso de "balcanización de la red" no solo transforma los flujos de capital, sino que altera las bases físicas del desarrollo web moderno.</p>
+
+            <blockquote class="cita-destacada">
+                "Levantar aduanas de datos sobre cables submarinos no protege a los ciudadanos; redefine quién tiene el monopolio absoluto para vigilarlos."
+            </blockquote>
+
+            <p>Para los ingenieros y desarrolladores, las consecuencias de este orden se manifestarán en la latencia, la duplicación forzada de bases de datos regionales y el aumento de costes de infraestructura. Mantener un sitio web accesible globalmente requerirá cumplir con normativas de cifrado asimétricas y fragmentadas según el territorio del lector, marcando el fin de la simplicidad de la arquitectura web homogénea.</p>
+
+            <h3 style="font-family: var(--fuente-serif); font-size: 24px; margin: 32px 0 16px 0; color: var(--color-tinta);">La fragmentación de los estándares abiertos</h3>
+
+            <p>El peligro más inminente de esta transición radica en la bifurcación de los protocolos de comunicación. Si los consorcios internacionales pierden peso frente a las regulaciones estatales unilaterales, podríamos ver la emergence de sistemas de enrutamiento incompatibles entre bloques económicos, obligando a los servicios digitales a operar bajo infraestructuras totalmente segregadas.</p>
+            
+            <p>A largo plazo, el coste financiero de esta soberanía no lo asumirán las grandes corporaciones tecnológicas, sino las pequeñas y medianas empresas digitales que verán barreras comerciales técnicas infranqueables. La descentralización utópica de la red de los años noventa ha concluido; entramos formalmente en la era de los archipiélagos digitales controlados de forma centralizada.</p>
+        </article>
+
+        <!-- SECCIÓN DE FEEDBACK FINAL -->
+        <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--color-borde); display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 13px; color: var(--color-gris-suave);">¿Le ha resultado útil este análisis?</span>
+            <div style="display: flex; gap: 8px;">
+                <button class="btn-accion-lectura" style="width: auto; height: auto; padding: 6px 12px; border-radius: 20px;" onclick="alert('¡Gracias por su voto!')">👍 Sí</button>
+                <button class="btn-accion-lectura" style="width: auto; height: auto; padding: 6px 12px; border-radius: 20px;" onclick="alert('Agradecemos su feedback.')">👎 No</button>
+            </div>
+        </div>
+    </main>
+  
+    <style>
+        /* ==========================================================================
+           1. CONFIGURACIÓN, VARIABLES Y SISTEMA DE DISEÑO (PREMIUM)
+           ========================================================================== */
+        :root {
+            --color-tinta: #11141a;
+            --color-texto: #2b303a;
+            --color-gris-suave: #6b7280;
+            --color-borde: #e5e7eb;
+            --color-fondo: #fbfbf9; /* Tono papel satinado premium */
+            --color-tarjeta: #ffffff;
+            --color-acento-editorial: #a31d1d; /* Rojo prensa tradicional */
+            
+            --fuente-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            --fuente-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+                --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+
+            --max-ancho-lectura: 1280px; /* Ancho áureo ideal para legibilidad */
+            --multiplicador-fuente: 1;
+            --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Variables para el Modo Nocturno */
+        body.modo-oscuro {
+            --color-tinta: #f3f4f6;
+            --color-texto: #d1d5db;
+            --color-gris-suave: #9ca3af;
+            --color-borde: #374151;
+            --color-fondo: #111215;
+                        --fuente-logotipo: 'UnifrakturMaguntia', cursive;
+            --color-tarjeta: #18191d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            font-family: var(--fuente-sans);
+            line-height: 1.6;
+            transition: background-color 0.4s ease, color 0.4s ease;
+                    zoom:75%;
+
+        }
+
+        /* ==========================================================================
+           2. BARRA DE HERRAMIENTAS SUPERIOR DE LECTURA
+           ========================================================================== */
+        .barra-lectura-herramientas {
+            position: sticky;
+            top: 0;
+            background-color: rgba(251, 251, 249, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-borde);
+            z-index: 1;
+            transition: var(--transition-smooth);
+          padding-top: 50px;
+        }
+        body.modo-oscuro .barra-lectura-herramientas {
+            background-color: rgba(17, 18, 21, 0.85);
+        }
+
+        .contenedor-herramientas {
+            max-width: var(--max-ancho-lectura);
+            margin: 0 auto;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .volver-link {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: var(--color-tinta);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .controles-derecha {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-accion-lectura {
+            background: none;
+            border: 1px solid var(--color-borde);
+            color: var(--color-tinta);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+        .btn-accion-lectura:hover {
+            border-color: var(--color-tinta);
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        body.modo-oscuro .btn-accion-lectura:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Línea de progreso de lectura */
+        .progreso-scroll {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: var(--color-acento-editorial);
+            transition: width 0.1s ease-out;
+        }
+
+        /* ==========================================================================
+           3. ESTRUCTURA DEL ARTÍCULO (CAMPUS EDITORIAL)
+           ========================================================================== */
+        .articulo-contenedor {
+            max-width: var(--max-ancho-lectura);
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+
+        .categoria-badge {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-acento-editorial);
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .titular-principal {
+            font-family: var(--fuente-serif);
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.15;
+            color: var(--color-tinta);
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .bajada-subtitulo {
+            font-size: 18px;
+            line-height: 1.5;
+            color: var(--color-gris-suave);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        /* Ficha del Periodista */
+        .bloque-autor-fecha {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-top: 1px solid var(--color-borde);
+            border-bottom: 1px solid var(--color-borde);
+            padding: 14px 0;
+            margin-bottom: 32px;
+        }
+
+        .avatar-autor {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .metadatos-autor {
+            font-size: 13px;
+        }
+
+        .nombre-autor {
+            font-weight: 700;
+            color: var(--color-tinta);
+            display: block;
+        }
+
+        .fecha-publicacion {
+            color: var(--color-gris-suave);
+        }
+
+        .tiempo-lectura {
+            color: var(--color-acento-editorial);
+            font-weight: 600;
+            margin-left: 6px;
+        }
+
+        /* Imagen Multimedia Principal */
+        .figura-multimedia {
+            margin: 0 -20px 32px -20px; /* Se desborda elegantemente del eje de texto */
+            position: relative;
+        }
+
+        .figura-multimedia img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .pie-de-foto {
+            font-size: 12px;
+            color: var(--color-gris-suave);
+            margin-top: 8px;
+            padding: 0 20px;
+            line-height: 1.4;
+        }
+
+        /* Cuerpo del Texto Editorial */
+        .cuerpo-editorial p {
+            font-family: var(--fuente-sans);
+            font-size: calc(16.5px * var(--multiplicador-fuente));
+/*            color: var(--color-texto);*/
+            margin-bottom: 24px;
+            text-align: justify;
+        }
+
+        /* Capitular (Drop Cap) Premium al inicio */
+        .cuerpo-editorial p:first-of-type::first-letter {
+            font-family: var(--fuente-serif);
+            font-size: 75px;
+            font-weight: 900;
+            float: left;
+            line-height: 60px;
+            padding-right: 8px;
+            padding-top: 4px;
+            color: var(--color-tinta);
+        }
+
+        /* Destacado Intermedio (Pull Quote) */
+        .cita-destacada {
+            font-family: var(--fuente-serif);
+            font-size: calc(22px * var(--multiplicador-fuente));
+            font-style: italic;
+            color: var(--color-acento-editorial);
+            border-left: 3px solid var(--color-acento-editorial);
+            padding-left: 20px;
+            margin: 36px 0;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .titular-principal { font-size: 30px; }
+            .bajada-subtitulo { font-size: 16px; }
+            .figura-multimedia { border-radius: 0; }
+            .figura-multimedia img { border-radius: 0; }
+            .cuerpo-editorial p { text-align: left; } /* Evita ríos blancos en celular */
+        }
+    </style>
+      <script src="src/components/Footer-Header/Header-Footer-main.js" defer></script>
+
+  <script>
+// ==========================================================================
+// MOTOR DE INTERACTIVIDAD EDITORIAL CENTRALIZADO (PREMIUM)
+// ==========================================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('🏛️ El Heraldo Core Engine: Inicializado correctamente.');
+
+    // ==========================================================================
+    // 1. TELEMETRÍA DEL PROGRESO DE LECTURA (BARRA DE SCROLL SUPERIOR)
+    // ==========================================================================
+    const indicadorProgreso = document.getElementById('indicadorProgreso');
+    
+    if (indicadorProgreso) {
+        window.addEventListener('scroll', () => {
+            // Calculamos la distancia total de scroll disponible en el documento
+            const alturaTotalDoc = document.documentElement.scrollHeight - window.innerHeight;
+            const posicionScrollActual = window.scrollY;
+            
+            if (alturaTotalDoc > 0) {
+                const porcentajeLectura = (posicionScrollActual / alturaTotalDoc) * 100;
+                // Asignamos el ancho dinámico por hardware
+                indicadorProgreso.style.width = `${porcentajeLectura}%`;
+            }
+        }, { passive: true }); // Optimización pasiva para evitar caídas de FPS
+    }
+
+    // ==========================================================================
+    // 2. FILTRO DE MODO LECTURA NOCTURNA (CON PERSISTENCIA LOCALSTORAGE)
+    // ==========================================================================
+    const btnOscuro = document.getElementById('btnOscuro');
+    
+    if (btnOscuro) {
+        // Al cargar la página, verificamos si el usuario ya tenía una preferencia guardada
+        if (localStorage.getItem('preferencia-color') === 'oscuro') {
+            document.body.classList.add('modo-oscuro');
+            actualizarIconoLuna(true);
+        }
+
+        btnOscuro.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
+            const esModoOscuro = document.body.classList.contains('modo-oscuro');
+            
+            // Guardamos de forma indefinida en el navegador la elección del lector
+            localStorage.setItem('preferencia-color', esModoOscuro ? 'oscuro' : 'claro');
+            actualizarIconoLuna(esModoOscuro);
+        });
+    }
+
+    function actualizarIconoLuna(oscuro) {
+        if (!btnOscuro) return;
+        btnOscuro.innerHTML = oscuro 
+            ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.22" x2="5.64" y2="17.84"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>` // SVG Sol
+            : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>`; // SVG Luna
+    }
+
+    // ==========================================================================
+    // 3. CONTROLADOR DE ACCESIBILIDAD TIPOGRÁFICA (TAMAÑO DINÁMICO)
+    // ==========================================================================
+    const btnFuentes = document.getElementById('btnFuentes');
+    let escalaActual = 1;
+
+    if (btnFuentes) {
+        btnFuentes.addEventListener('click', () => {
+            // Ciclo de escala: Normal (1) -> Grande (1.15) -> Extra Grande (1.3) -> Reiniciar (1)
+            escalaActual = escalaActual === 1 ? 1.15 : escalaActual === 1.15 ? 1.3 : 1;
+            
+            // Inyectamos la variable CSS directamente al body para el cálculo matemático
+            document.body.style.setProperty('--multiplicador-fuente', escalaActual);
+            
+            // Retroalimentación visual en la etiqueta del botón
+            btnFuentes.textContent = escalaActual === 1 ? 'A+' : escalaActual === 1.15 ? 'A++' : 'A';
+        });
+    }
+
+    // ==========================================================================
+    // 4. ALGORITMO TELEMÉTRICO DE TIEMPO DE LECTURA REAL (LECTURA ESTIMADA)
+    // ==========================================================================
+// Seleccionamos los elementos del artículo y el contador
+const cuerpoTexto = document.getElementById('cuerpoTexto');
+const lecturaCalculada = document.getElementById('lecturaCalculada');
+
+// Validamos que ambos elementos existan en la página web
+if (cuerpoTexto && lecturaCalculada) {
+    // Extraemos el texto y eliminamos los espacios innecesarios
+    const textoLimpio = cuerpoTexto.textContent.trim();
+    
+    // Si no hay texto o está vacío, muestra 0 min
+    if (textoLimpio === "") {
+        lecturaCalculada.textContent = "0 min de lectura";
+    } else {
+        // Dividimos el texto por cualquier tipo de espacio en blanco para contar las palabras
+        const totalPalabras = textoLimpio.split(/\s+/).length;
+        
+        // Calculamos el tiempo estimado basado en 200 palabras por minuto
+        const minutosEstimados = Math.ceil(totalPalabras / 200);
+        
+        // Reemplazamos el texto "Calculando..." por el resultado real
+        lecturaCalculada.textContent = `${minutosEstimados} min de lectura`;
+    }
+}
+
+    // ==========================================================================
+    // 5. SISTEMA DE COMPARTICIÓN INTELIGENTE (WEB SHARE API + CLIPBOARD)
+    // ==========================================================================
+const btnCompartir = document.getElementById('btnCompartirPost');
+
+if (btnCompartir) {
+  btnCompartir.addEventListener('click', async () => {
+    // Definimos los datos, cambiando window.location.href por tu dominio fijo
+    const shareData = {
+      title: document.title || 'Pirdeoc',
+      text: 'El coste invisible de la soberanía digital: un análisis a fondo del nuevo orden de redes',
+      url: 'https://pirdeoc.gieovannyfrias.com/Post' // <-- URL fija asignada aquí (con su protocolo seguro https://)
+    };
+
+    // 1. Intentar compartición nativa (Móviles)
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        return; // Éxito, salimos de la función
+      } catch (err) {
+        // Si el usuario canceló adrede, abortamos. Si fue otro error, pasa al fallback.
+        if (err.name === 'AbortError') return;
+      }
+    }
+
+    // 2. Respaldo: Copiar al portapapeles (Ordenadores o fallo de Share API)
+    try {
+      await navigator.clipboard.writeText(shareData.url);
+      
+      const contenidoOriginal = btnCompartir.innerHTML;
+      btnCompartir.innerHTML = "✨ ¡Enlace copiado!";
+      btnCompartir.style.borderColor = "var(--color-acento-editorial)";
+      
+      setTimeout(() => {
+        btnCompartir.innerHTML = contenidoOriginal;
+        btnCompartir.style.borderColor = "";
+      }, 2000);
+    } catch (copyErr) {
+      // 3. Emergencia absoluta
+      alert("Copia este enlace para compartir: " + shareData.url);
+    }
+  });
+}
+});            
+  </script>
+  </body>
