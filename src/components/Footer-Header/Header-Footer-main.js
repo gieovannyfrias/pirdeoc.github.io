@@ -366,6 +366,8 @@
                                 <li><a href="/Anuncios">Anuncios Clasificados</a></li>
                                 <li><a href="/Podcasts_Videos">Podcasts y Videos</a></li>
                                 <li><a href="/Newsletter">Todas las Newsletters</a></li>
+                                <li><a href="/Categorias">Todas las categorias</a></li>
+
                             </ul>
                         </div>
                         <div class="footer-column">
