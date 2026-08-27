@@ -356,6 +356,8 @@
                                 <li><a href="/Ciencia_Salud">Ciencia y Salud</a></li>
                                 <li><a href="/Tecnologia">Tecnología</a></li>
                                 <li><a href="/Estilo_Vida">Estilo de Vida</a></li>
+                                <li><a href="/Espectaculos">Espectaculos</a></li>
+
                             </ul>
                         </div>
                         <div class="footer-column">
